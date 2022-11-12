@@ -1,0 +1,23 @@
+package tw.dou.jdbclab;
+
+public class JDBC01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+//		通用Code概念，換DB時只要換掉DB的Connector即可。
+		
+//		
+		
+		try {
+			
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			System.out.println("Driver OK");
+			
+		}catch (Exception e) {
+			System.out.println(e.toString());
+		}
+		
+	}
+
+}
